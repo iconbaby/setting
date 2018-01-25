@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.hg.mysettings.ui.AppManagerActivity;
 import com.hg.mysettings.ui.ItvSetActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.home_net_set:
                 break;
             case R.id.home_app_manager:
+                intent = new Intent(this, AppManagerActivity.class);
                 break;
             case R.id.home_more:
                 break;

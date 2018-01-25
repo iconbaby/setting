@@ -4,6 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="50dp"
     tools:context=".ui.AppManagerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_manager_storage"
+        android:textColor="@color/colorWhite" />
+
+    <ProgressBar
+        android:id="@+id/app_manager_pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="50" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_manage_storage_total"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/app_manage_storage_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="3.3g"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/app_manage_storage_avaliable"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/app_manage_storage_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="3.3g"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_manage_had_Download"
+        android:textColor="@color/colorWhite" />
+
+    <ListView
+        android:id="@+id/app_manage_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
 </LinearLayout>

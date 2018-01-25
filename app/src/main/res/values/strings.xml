@@ -11,4 +11,8 @@
     <string name="btn_ok">确定</string>
     <string name="btn_cancel">取消</string>
     <string name="password_dialog_title">请输入密码</string>
+    <string name="app_manager_storage">内部存储：</string>
+    <string name="app_manage_storage_total">总计</string>
+    <string name="app_manage_storage_avaliable">可用空间</string>
+    <string name="app_manage_had_Download">已经下载的应用</string>
 </resources>
