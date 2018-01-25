@@ -1,6 +1,7 @@
 package com.hg.mysettings.ui;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -56,15 +58,25 @@ public class AppManagerActivity extends Activity {
      */
     private void initHadInstallApp() {
         mAppInfoList = queryAppInfo();
-        Log.i(TAG, "initHadInstallApp: "+mAppInfoList.size());
+        Log.i(TAG, "initHadInstallApp: " + mAppInfoList.size());
         AppManagerAdapter appManagerAdapter = new AppManagerAdapter(this, mAppInfoList);
         mListView.setAdapter(appManagerAdapter);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i(TAG, "onItemClick: " + position);
+                popAppinfoDetailDialog(position);
 
             }
         });
+    }
+
+    private void popAppinfoDetailDialog(int position) {
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        LinearLayout dialogView = (LinearLayout) getLayoutInflater().inflate(R.layout.layout_appinfo_detail, null);
+        alertDialog.setView(dialogView);
+        alertDialog.show();
+
     }
 
     private List<AppInfo> queryAppInfo() {
@@ -74,7 +86,7 @@ public class AppManagerActivity extends Activity {
         for (PackageInfo pkinfo : installedPackages) {
             Drawable icon = pkinfo.applicationInfo.loadIcon(pm);
             String label = (String) pkinfo.applicationInfo.loadLabel(pm);
-            Log.i(TAG, "queryAppInfo: "+label);
+            Log.i(TAG, "queryAppInfo: " + label);
             AppInfo appInfo = new AppInfo();
             appInfo.setAppIcon(icon);
             appInfo.setAppLabel(label);

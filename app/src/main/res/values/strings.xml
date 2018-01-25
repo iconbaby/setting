@@ -15,4 +15,12 @@
     <string name="app_manage_storage_total">总计</string>
     <string name="app_manage_storage_avaliable">可用空间</string>
     <string name="app_manage_had_Download">已经下载的应用</string>
+    <string name="app_info">应用信息</string>
+    <string name="app_info_sum">总计</string>
+    <string name="btn_clear_data">清除数据</string>
+    <string name="btn_clear_cache">清除缓存</string>
+    <string name="btn_uninstall">卸载</string>
+    <string name="app_info_cache">缓存</string>
+    <string name="app_info_data">数据</string>
+    <string name="app_info_application">应用</string>
 </resources>

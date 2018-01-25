@@ -1,6 +1,7 @@
 package com.hg.mysettings.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ import java.util.List;
 public class AppManagerAdapter extends BaseAdapter {
     private List<AppInfo> mAppInfoList;
     private LayoutInflater mInflater;
-
+    private static final String TAG = "AppManagerAdapter";
     public AppManagerAdapter(Context context, List<AppInfo> appInfoList) {
         this.mInflater = LayoutInflater.from(context);
         this.mAppInfoList = appInfoList;
@@ -50,6 +51,7 @@ public class AppManagerAdapter extends BaseAdapter {
         ViewHolder viewHolder;
 
         if (convertView == null) {
+            Log.i(TAG, "getView: convertView == null");
             convertView = mInflater.inflate(R.layout.item_appinfo_listview, null);
             viewHolder = new ViewHolder();
             viewHolder.appIcon = (ImageView) convertView.findViewById(R.id.item_appinfo_listview_icon);
@@ -57,6 +59,7 @@ public class AppManagerAdapter extends BaseAdapter {
             viewHolder.tvAppSize = (TextView) convertView.findViewById(R.id.item_appinfo_listview_size);
             convertView.setTag(viewHolder);
         } else {
+            Log.i(TAG, "getView: convertView != null");
             viewHolder = (ViewHolder) convertView.getTag();
         }
         AppInfo appinfo = (AppInfo) getItem(position);
