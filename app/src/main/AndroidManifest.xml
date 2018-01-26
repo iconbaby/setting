@@ -3,7 +3,6 @@
     package="com.hg.mysettings">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -21,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ItvSetActivity" />
-        <activity android:name=".ui.AppManagerActivity"></activity>
+        <activity android:name=".ui.AppManagerActivity" />
+        <activity android:name=".ui.DeviceInfoActivity"></activity>
     </application>
 
 </manifest>

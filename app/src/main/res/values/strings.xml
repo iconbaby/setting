@@ -23,4 +23,16 @@
     <string name="app_info_cache">缓存</string>
     <string name="app_info_data">数据</string>
     <string name="app_info_application">应用</string>
+    <string name="stbModel">机顶盒型号：</string>
+    <string name="softwareId">软件版本号：</string>
+    <string name="settings_id">设置版本：</string>
+    <string name="serialNum">序列号：</string>
+    <string name="mac">MAC地址：</string>
+    <string name="net_id">网络帐号:</string>
+    <string name="service_id">业务帐号：</string>
+    <string name="service_group">业务分组：</string>
+    <string name="IPTVauthURL">主认证地址：</string>
+    <string name="upgrade_url">升级地址：</string>
+    <string name="manufacture_name">厂家名称：</string>
+    <string name="launcher_version">Launcher版本:</string>
 </resources>
