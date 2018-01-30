@@ -35,4 +35,6 @@
     <string name="upgrade_url">升级地址：</string>
     <string name="manufacture_name">厂家名称：</string>
     <string name="launcher_version">Launcher版本:</string>
+    <string name="wireConnect">有线连接</string>
+    <string name="otherConnectMode">其他方式</string>
 </resources>

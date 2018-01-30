@@ -183,6 +183,4 @@ public class AppManagerActivity extends Activity {
             return -1;
         }
     }
-
-
 }
