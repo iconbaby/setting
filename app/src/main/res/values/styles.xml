@@ -21,4 +21,14 @@
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">20sp</item>
     </style>
+    <style name="item_list_txt">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <declare-styleable name="ListItem">
+
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+    </declare-styleable>
 </resources>

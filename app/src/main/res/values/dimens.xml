@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_sub_item_padding">5dp</dimen>
+    <dimen name="view_list_item_txt_left_width">100dp</dimen>
+    <dimen name="view_item_list_margin">20dp</dimen>
+</resources>
