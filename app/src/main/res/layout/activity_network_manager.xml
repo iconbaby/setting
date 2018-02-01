@@ -62,6 +62,7 @@
                     android:textSize="30sp" />
 
                 <TextView
+                    
                     android:id="@+id/network_has_connected_net"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
