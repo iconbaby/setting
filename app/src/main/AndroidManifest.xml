@@ -22,7 +22,8 @@
         <activity android:name=".ui.ItvSetActivity" />
         <activity android:name=".ui.AppManagerActivity" />
         <activity android:name=".ui.DeviceInfoActivity" />
-        <activity android:name=".ui.NetworkManagerActivity"></activity>
+        <activity android:name=".ui.NetworkManagerActivity" />
+        <activity android:name=".ui.WiredConnectionActivity"></activity>
     </application>
 
 </manifest>

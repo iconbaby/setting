@@ -16,13 +16,13 @@
         android:orientation="horizontal">
 
         <RadioGroup
-            android:id="@+id/network_manager_rd_connect_mode"
+            android:id="@+id/network_manager_rg_connect_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/network_manager_rd_wired_connect"
+                android:id="@+id/network_manager_rb_wired_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@null"
@@ -31,7 +31,8 @@
                 android:text="add" />
 
             <RadioButton
-                android:id="@+id/network_manager_rd_other_connect"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/network_manager_rb_other_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@null"
@@ -47,6 +48,7 @@
         android:orientation="horizontal">
 
         <com.hg.mysettings.widgets.ListItem
+            android:id="@+id/network_manager_listitem_wired"
             android:layout_width="500dp"
             android:layout_height="70dp"
             android:layout_marginTop="30dp"
