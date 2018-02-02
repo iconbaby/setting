@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--注意顺序有要求-->
+    <item android:drawable="@drawable/radio_focused_shape" android:state_checked="false" android:state_focused="true" />
+    <item android:drawable="@drawable/radio_checked_shape" android:state_checked="true" android:state_focused="false" />
+    <item android:drawable="@drawable/radio_checked_shape" android:state_checked="true" android:state_focused="true" />
+    <item android:drawable="@drawable/radio_unchecked_shape" android:state_checked="false" />
+    <item android:drawable="@drawable/radio_unchecked_shape" />
+</selector>

@@ -112,7 +112,6 @@ public class AppManagerActivity extends Activity {
 
     }
 
-
     /**
      * @date : 2018/1/25
      * @author : slkk
