@@ -16,11 +16,13 @@
         android:orientation="horizontal">
 
         <RadioGroup
+            android:id="@+id/network_manager_rd_connect_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/network_manager_rd_wired_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@null"
@@ -29,31 +31,14 @@
                 android:text="add" />
 
             <RadioButton
-                android:drawablePadding="10dp"
+                android:id="@+id/network_manager_rd_other_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@null"
+                android:drawablePadding="10dp"
                 android:drawableRight="@drawable/radio_selector_shape"
                 android:text="add" />
         </RadioGroup>
-
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/home_btn_selector"
-            android:checked="true"
-            android:focusable="true"
-            android:text="@string/wireConnect" />
-
-        <CheckBox
-            android:id="@+id/other_connect_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/home_btn_selector"
-            android:focusable="true"
-            android:text="@string/otherConnectMode" />
     </LinearLayout>
 
     <LinearLayout
