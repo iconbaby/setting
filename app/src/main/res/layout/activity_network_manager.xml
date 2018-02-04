@@ -31,10 +31,10 @@
                 android:text="add" />
 
             <RadioButton
-                android:layout_marginLeft="20dp"
                 android:id="@+id/network_manager_rb_other_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:button="@null"
                 android:drawablePadding="10dp"
                 android:drawableRight="@drawable/radio_selector_shape"

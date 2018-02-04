@@ -38,4 +38,8 @@
     <string name="wireConnect">有线连接</string>
     <string name="otherConnectMode">其他方式</string>
     <string name="has_connected_net">已连接网络：</string>
+    <string name="dia_net">拨号进行上网</string>
+    <string name="dial_mode">拨号模式</string>
+    <string name="dhcp_mode">DHCP/路由模式</string>
+    <string name="static_mode">静态IP模式</string>
 </resources>
