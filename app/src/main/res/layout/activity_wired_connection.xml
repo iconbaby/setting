@@ -8,17 +8,15 @@
     android:padding="100dp"
     tools:context=".ui.WiredConnectionActivity">
 
-    <TextView
+    <com.hg.mysettings.widgets.ListSwitchItem
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WiredConne" />
+        android:layout_height="wrap_content">
 
-    <Switch
-        android:splitTrack="true"
+    </com.hg.mysettings.widgets.ListSwitchItem>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOn=""
-        android:textOff=""
-        android:thumb="@drawable/swith_thump_seletor"
-        android:track="@drawable/switch_track_seletor" />
+        android:text="niasdfadf" />
+
 </LinearLayout>

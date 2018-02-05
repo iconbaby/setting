@@ -24,6 +24,11 @@ public class ListItem extends RelativeLayout {
     private TextView txtItemRight;
     private View view;
 
+    public ListItem(Context context) {
+        super(context, null);
+        this.context = context;
+        initView();
+    }
     public ListItem(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.context = context;
@@ -54,11 +59,7 @@ public class ListItem extends RelativeLayout {
         a.recycle();
     }
 
-    public ListItem(Context context) {
-        super(context, null);
-        this.context = context;
-        initView();
-    }
+
 
     private void initView() {
         this.view = LayoutInflater.from(this.context).inflate(R.layout.view_list, this);
